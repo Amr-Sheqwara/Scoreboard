@@ -1,0 +1,62 @@
+    :root {
+        --red: #F94F6D;
+        --blue: #1B244A;
+        --white: #EEEEEE;
+        --light-blue: #9AABD8;
+    }
+    
+    
+    body{
+    margin: 0;
+    padding: 0;
+    background-color:whitesmoke;
+    font-family: sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 6% 10%;
+    background: var(--blue);
+    padding: 125px;
+    
+}
+
+.Home, .Guest{
+    display:flex;
+    flex-direction: column;
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, sans-serif;
+
+}
+
+.guestScore, .homeScore {
+    height: 100%;
+    padding: 35% 70%;
+    display: flex;
+    background-color: black;
+    color: var(--red);
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+                                                
+}
+
+.guestBtn, .homeBtn {
+    display: inline;
+    margin: 20px;
+}
+
+button {
+    border: 3px  solid var(--light-blue);
+    background-color: var(--blue);
+    color: var(--white);
+    margin: 2px;
+}
