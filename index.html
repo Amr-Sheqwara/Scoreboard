@@ -4,38 +4,43 @@
     <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Basketball Scoreboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <style>
         @import url('https://fonts.cdnfonts.com/css/cursed-timer-ulil');
     </style>
-                
 </head>
     <body>
         <div class="container">
-            <div class="Home">
-                <h1>HOME</h1>
+            <div class="scoreContainer">
+                <div class="Home">
+                    <h1>HOME</h1>
                     <div class="homeScore">
-                        <span class="number">1</span>
+                        <span class="trophy" id="homeTrophy">🏆</span>
+                        <span id="numberHome">0</span>
                     </div>
-                    <div class="homeBtn">
-                        <button>+1</button>
-                        <button>+2</button>
-                        <button>+3</button>
+                    <div>
+                        <button onclick="increaseHome1()">+1</button>
+                        <button onclick="increaseHome2()">+2</button>
+                        <button onclick="increaseHome3()">+3</button>
                     </div>
-            </div>
-            <div class="Guest">
-                <h1>GUEST</h1>
+                </div>
+                <div class="Guest">
+                    <h1>GUEST</h1>
                     <div class="guestScore">
-                        <span class="number">0</span>
+                        <span class="trophy" id="guestTrophy">🏆</span>
+                        <span id="numberGuest">0</span>
                     </div>
-                    <div class="guestBtn">
-                        <button>+1</button>
-                        <button>+2</button>
-                        <button>+3</button>
+                    <div>
+                        <button onclick="increaseGuest1()">+1</button>
+                        <button onclick="increaseGuest2()">+2</button>
+                        <button onclick="increaseGuest3()">+3</button>
                     </div>
+                </div>
+            </div>
+            <div class="resetBtn">
+            <button id="reset" onclick="reset()">Reset</button>
             </div>
         </div>
-        <script src="index.js"></script>
+        <script defer src="index.js"></script>
     </body>
 </html>
